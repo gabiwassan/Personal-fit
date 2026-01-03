@@ -1,11 +1,12 @@
 import type { SessionDefinition, SessionKey } from '@/types';
+import { es } from '@/lib/i18n';
 
 export const SESSION_DEFINITIONS: Record<SessionKey, SessionDefinition> = {
   'asian-walk': {
     key: 'asian-walk',
-    title: 'Asian Walk (3+3)',
-    description: '3 min fast + 3 min slow intervals',
-    howTo: '3 min fast + 3 min slow × 5 = 30 min. Fast = breathing hard but controlled.',
+    title: es.sessions['asian-walk'].title,
+    description: es.sessions['asian-walk'].description,
+    howTo: es.sessions['asian-walk'].howTo,
     defaultMinutes: 30,
     category: 'Cardio',
     intensity: 'Medium',
@@ -13,9 +14,9 @@ export const SESSION_DEFINITIONS: Record<SessionKey, SessionDefinition> = {
   },
   'walk-or-jog': {
     key: 'walk-or-jog',
-    title: 'Walk or Easy Jog',
-    description: 'Easy pace walking with optional light jogging',
-    howTo: '30 min total. Walk + very easy jog only if feeling good; never gasping.',
+    title: es.sessions['walk-or-jog'].title,
+    description: es.sessions['walk-or-jog'].description,
+    howTo: es.sessions['walk-or-jog'].howTo,
     defaultMinutes: 30,
     category: 'Cardio',
     intensity: 'Easy',
@@ -23,9 +24,9 @@ export const SESSION_DEFINITIONS: Record<SessionKey, SessionDefinition> = {
   },
   'long-walk': {
     key: 'long-walk',
-    title: 'Long Continuous Walk',
-    description: 'Steady continuous walking',
-    howTo: 'NOT interval 3+3. Continuous comfortable-active pace 40–60 min.',
+    title: es.sessions['long-walk'].title,
+    description: es.sessions['long-walk'].description,
+    howTo: es.sessions['long-walk'].howTo,
     defaultMinutes: 50,
     category: 'Cardio/Base',
     intensity: 'Easy-Medium',
@@ -33,9 +34,9 @@ export const SESSION_DEFINITIONS: Record<SessionKey, SessionDefinition> = {
   },
   'strength-a': {
     key: 'strength-a',
-    title: 'Strength A (Push + Core)',
-    description: 'Upper body push and core work',
-    howTo: '25 min. 2–3 rounds: Push-ups 10–15 (knees allowed), Squats 15–20, Front plank 30–45s, Side plank 20s each side. Rest 45–60s between rounds.',
+    title: es.sessions['strength-a'].title,
+    description: es.sessions['strength-a'].description,
+    howTo: es.sessions['strength-a'].howTo,
     defaultMinutes: 25,
     category: 'Strength',
     intensity: 'Medium',
@@ -43,9 +44,9 @@ export const SESSION_DEFINITIONS: Record<SessionKey, SessionDefinition> = {
   },
   'strength-b': {
     key: 'strength-b',
-    title: 'Strength B (Pull + Shoulders)',
-    description: 'Upper body pull and shoulder work',
-    howTo: '25 min. 2–3 rounds: Row with towel/backpack 12–15, Lateral raises with bottles/band 12–15, Biceps curl with towel/backpack 12, Dead bug OR hollow hold 20–30s.',
+    title: es.sessions['strength-b'].title,
+    description: es.sessions['strength-b'].description,
+    howTo: es.sessions['strength-b'].howTo,
     defaultMinutes: 25,
     category: 'Strength',
     intensity: 'Medium',
@@ -53,9 +54,9 @@ export const SESSION_DEFINITIONS: Record<SessionKey, SessionDefinition> = {
   },
   'rest': {
     key: 'rest',
-    title: 'Rest / Family',
-    description: 'Recovery day',
-    howTo: 'Rest day. Optional light movement only (walk/mobility/easy core 10–15 min).',
+    title: es.sessions.rest.title,
+    description: es.sessions.rest.description,
+    howTo: es.sessions.rest.howTo,
     defaultMinutes: 0,
     category: 'Recovery',
     intensity: '—',
@@ -76,15 +77,15 @@ export const WEEKLY_TEMPLATE: Record<number, SessionKey> = {
 
 export const TRAINING_RULES = [
   {
-    title: 'Rest Days',
-    rule: 'If you train, it must be LIGHT (walk/mobility/core). No HIIT, no hard jog, no "military" calisthenics.',
+    title: es.trainingRules.restDays.title,
+    rule: es.trainingRules.restDays.rule,
   },
   {
-    title: 'Strength Sessions',
-    rule: 'Never train to failure; focus on consistency.',
+    title: es.trainingRules.strengthSessions.title,
+    rule: es.trainingRules.strengthSessions.rule,
   },
   {
-    title: 'Long Walk',
-    rule: 'Continuous pace (NOT 3+3 intervals).',
+    title: es.trainingRules.longWalk.title,
+    rule: es.trainingRules.longWalk.rule,
   },
 ];

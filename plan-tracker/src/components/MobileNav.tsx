@@ -1,18 +1,19 @@
 import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { es } from '@/lib/i18n';
 
 const navItems = [
-  { path: '/today', label: 'Today', icon: '📅' },
-  { path: '/plan', label: 'Plan', icon: '📋' },
-  { path: '/stats', label: 'Stats', icon: '📊' },
-  { path: '/settings', label: 'Settings', icon: '⚙️' },
+  { path: '/today', label: es.nav.today, icon: '📅' },
+  { path: '/plan', label: es.nav.plan, icon: '📋' },
+  { path: '/stats', label: es.nav.stats, icon: '📊' },
+  { path: '/settings', label: es.nav.settings, icon: '⚙️' },
 ];
 
 export function MobileNav() {
   const location = useLocation();
 
   return (
-    <nav className="fixed bottom-0 left-0 right-0 z-50 bg-white border-t border-border">
+    <nav className="fixed bottom-0 left-0 right-0 z-50 bg-card border-t border-border">
       <div className="max-w-md mx-auto flex justify-around items-center h-16 px-4">
         {navItems.map(item => {
           const isActive = location.pathname === item.path;

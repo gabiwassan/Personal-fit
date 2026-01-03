@@ -1,0 +1,213 @@
+// Spanish translations for the app
+export const es = {
+  // Navigation
+  nav: {
+    today: 'Hoy',
+    plan: 'Plan',
+    stats: 'Estadísticas',
+    settings: 'Ajustes',
+  },
+
+  // Today Page
+  today: {
+    title: 'Hoy',
+    markDone: 'Marcar hecho',
+    completed: '✓ Completado',
+    reset: 'Resetear',
+    logWorkout: 'Registrar Entrenamiento',
+    minutes: 'Minutos',
+    rpe: 'RPE (Esfuerzo Percibido)',
+    mood: 'Ánimo',
+    notes: 'Notas',
+    saveLog: 'Guardar Registro',
+    trainingRules: 'Reglas de Entrenamiento',
+    howTo: 'Cómo hacerlo:',
+    selectRpe: 'Seleccionar RPE...',
+    selectMood: 'Seleccionar ánimo...',
+    notesPlaceholder: '¿Cómo te sentiste? Observaciones...',
+    resetDay: '¿Resetear el registro de hoy?',
+    markedComplete: 'Marcado como completado!',
+    markedIncomplete: 'Marcado como incompleto',
+    dayReset: 'Día reseteado',
+    workoutLogged: 'Entrenamiento registrado!',
+    noPlanToday: 'No hay plan para hoy',
+  },
+
+  // Plan Page
+  plan: {
+    title: 'Plan de Entrenamiento',
+    all: 'Todos',
+    completed: 'Completados',
+    pending: 'Pendientes',
+    cardio: 'Cardio',
+    strength: 'Fuerza',
+    recovery: 'Recuperación',
+    today: 'Hoy',
+    thisWeek: 'Esta Semana',
+    lastWeek: 'Última Semana',
+    weekOf: 'Semana del',
+    overrideWorkout: 'Cambiar Ejercicio',
+    useDefault: 'Usar predeterminado',
+    overrideWarning: '⚠️ El cambio afecta solo este día',
+    markAsCompleted: 'Marcar como completado',
+    cancel: 'Cancelar',
+    save: 'Guardar',
+    dayUpdated: 'Día actualizado!',
+    min: 'min',
+  },
+
+  // Stats Page
+  stats: {
+    title: 'Estadísticas',
+    totalMinutes: 'Minutos Totales',
+    trainingCompliance: 'Cumplimiento',
+    currentStreak: 'Racha Actual',
+    bestStreak: 'Mejor Racha',
+    consistencyScore: 'Puntuación de Consistencia',
+    basedOn: 'Basado en cumplimiento (60%), estabilidad (20%), y racha (20%)',
+    weeklyMinutes: 'Minutos Semanales (Últimas 6 Semanas)',
+    avgRpeTrend: 'Tendencia RPE Promedio',
+    sessionsByType: 'Sesiones por Tipo',
+    cardioVsStrength: 'Cardio vs Fuerza',
+    cardio: 'Cardio',
+    strength: 'Fuerza',
+    detailedMetrics: 'Métricas Detalladas',
+    completedSessions: 'Sesiones Completadas',
+    totalTrainingDays: 'Días de Entrenamiento Totales',
+    overallCompliance: 'Cumplimiento General',
+    avgRpe: 'RPE Promedio',
+  },
+
+  // Settings Page
+  settings: {
+    title: 'Ajustes',
+    offlineMode: 'Modo Offline - Todos los datos almacenados localmente',
+    planDateRange: 'Rango de Fechas del Plan',
+    startDate: 'Fecha de Inicio',
+    endDate: 'Fecha de Fin',
+    regeneratePlan: 'Regenerar Plan',
+    regenerateNote: 'Regenerar reconstruirá el plan desde la plantilla semanal preservando tus registros existentes.',
+    resetOptions: 'Opciones de Reseteo',
+    resetPlanOnly: 'Resetear Solo Plan',
+    resetPlanNote: 'Reconstruir estructura del plan, mantener todos los registros',
+    resetLogsOnly: 'Resetear Solo Registros',
+    resetLogsNote: 'Eliminar todos los registros de entrenamientos, mantener estructura del plan',
+    factoryReset: 'Reseteo de Fábrica',
+    factoryResetNote: '⚠️ Eliminar todo - ¡no se puede deshacer!',
+    dataManagement: 'Gestión de Datos',
+    exportData: '📥 Exportar Datos (JSON)',
+    importData: 'Importar Datos',
+    importReplace: 'Importar y Reemplazar',
+    importReplaceNote: 'Reemplazar todos los datos actuales',
+    importMerge: 'Importar y Combinar',
+    importMergeNote: 'Mantener registros existentes, combinar importados',
+    privacy: 'Privacidad',
+    privacyNote: '🔒 Todos los datos permanecen en este dispositivo (localStorage). No se envían datos a ningún servidor. Esta app funciona completamente offline.',
+    about: 'Acerca de',
+    version: 'Versión',
+    planStart: 'Inicio del Plan',
+    planEnd: 'Fin del Plan',
+    totalDays: 'Días Totales',
+    planRegenerated: 'Plan regenerado!',
+    planReset: 'Plan reseteado',
+    logsReset: 'Registros reseteados',
+    factoryResetComplete: 'Reseteo de fábrica completado',
+    dataExported: 'Datos exportados!',
+    dataImported: 'Datos importados (reemplazados)!',
+    dataMerged: 'Datos importados (combinados)!',
+    errorExporting: 'Error exportando datos',
+    errorImporting: 'Error importando datos',
+    confirmRegenerate: 'Regenerar plan? (Los registros existentes se preservarán)',
+    confirmResetPlan: '¿Resetear estructura del plan? (Los registros se mantendrán)',
+    confirmResetLogs: '¿Eliminar todos los registros? (La estructura del plan se mantendrá)',
+    confirmFactoryReset: '¿Reseteo de fábrica? Esto eliminará TODOS los datos (plan + registros). ¡Esto no se puede deshacer!',
+  },
+
+  // Mood options
+  mood: {
+    good: '😊 Bien',
+    ok: '😐 Normal',
+    bad: '😞 Mal',
+  },
+
+  // RPE levels
+  rpe: {
+    veryEasy: 'Muy Fácil',
+    easy: 'Fácil',
+    moderate: 'Moderado',
+    hard: 'Difícil',
+    maxEffort: 'Esfuerzo Máximo',
+  },
+
+  // Training rules
+  trainingRules: {
+    restDays: {
+      title: 'Días de Descanso',
+      rule: 'Si entrenas, debe ser LIGERO (caminar/movilidad/core). Sin HIIT, sin trote fuerte, sin calistenia "militar".',
+    },
+    strengthSessions: {
+      title: 'Sesiones de Fuerza',
+      rule: 'Nunca entrenar al fallo; enfócate en la consistencia.',
+    },
+    longWalk: {
+      title: 'Caminata Larga',
+      rule: 'Ritmo continuo (NO intervalos 3+3).',
+    },
+  },
+
+  // Session types
+  sessions: {
+    'asian-walk': {
+      title: 'Caminata Asiática (3+3)',
+      description: 'Intervalos de 3 min rápido + 3 min lento',
+      howTo: '3 min rápido + 3 min lento × 5 = 30 min. Rápido = respiración fuerte pero controlada.',
+    },
+    'walk-or-jog': {
+      title: 'Caminar o Trotar Fácil',
+      description: 'Ritmo fácil caminando con trote ligero opcional',
+      howTo: '30 min total. Caminar + trote muy fácil solo si te sientes bien; nunca jadeando.',
+    },
+    'long-walk': {
+      title: 'Caminata Continua Larga',
+      description: 'Caminata continua estable',
+      howTo: 'NO intervalos 3+3. Ritmo continuo cómodo-activo 40–60 min.',
+    },
+    'strength-a': {
+      title: 'Fuerza A (Empuje + Core)',
+      description: 'Trabajo de empuje de tren superior y core',
+      howTo: '25 min. 2–3 rondas: Flexiones 10–15 (rodillas permitidas), Sentadillas 15–20, Plancha frontal 30–45s, Plancha lateral 20s cada lado. Descanso 45–60s entre rondas.',
+    },
+    'strength-b': {
+      title: 'Fuerza B (Jalón + Hombros)',
+      description: 'Trabajo de jalón de tren superior y hombros',
+      howTo: '25 min. 2–3 rondas: Remo con toalla/mochila 12–15, Elevaciones laterales con botellas/banda 12–15, Curl de bíceps con toalla/mochila 12, Dead bug O hollow hold 20–30s.',
+    },
+    'rest': {
+      title: 'Descanso / Familia',
+      description: 'Día de recuperación',
+      howTo: 'Día de descanso. Movimiento ligero opcional solamente (caminar/movilidad/core fácil 10–15 min).',
+    },
+  },
+
+  // Insights
+  insights: {
+    greatProgress: 'Gran Progreso!',
+    activityDecreased: 'Actividad Disminuyó',
+    thisWeekMinutes: 'Esta semana registraste {minutes} minutos (+{percent}% vs la semana pasada).',
+    thisWeekMinutesDown: 'Esta semana registraste {minutes} minutos ({percent}% vs la semana pasada).',
+    perfectStrengthWeek: 'Semana de Fuerza Perfecta!',
+    strengthConsistency: 'Consistencia de Fuerza',
+    completedAllStrength: 'Completaste todas las {total} sesiones de fuerza la semana pasada.',
+    completedStrength: 'Completaste {completed} de {total} sesiones de fuerza planeadas la semana pasada.',
+    effortTrendingUp: 'Esfuerzo en Aumento',
+    goodRecovery: 'Buena Recuperación',
+    effortStable: 'Esfuerzo Estable',
+    rpeIncreased: 'El RPE promedio aumentó {diff} en las últimas 2 semanas. Considera mantener el entrenamiento de mañana fácil.',
+    rpeDecreased: 'El RPE promedio disminuyó {diff} en las últimas 2 semanas. ¡Te estás recuperando bien!',
+    rpeStable: 'RPE promedio estable en {rpe} en las últimas 2 semanas. Continúa como planeado.',
+    dayStreak: 'Racha de {days} Días!',
+    onARoll: '¡Vas muy bien! Sigue así.',
+    stayConsistent: 'Mantén la Consistencia',
+    complianceLow: 'El cumplimiento del entrenamiento es del {percent}%. ¡Los pequeños pasos cada día suman!',
+  },
+};
